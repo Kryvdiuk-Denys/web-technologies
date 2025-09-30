@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.title {
+    color: red;
+}
+
+.ingredients {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    line-height: 0.8;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.note {
+    margin-top: 10px;
+    font-style: italic;
+    border-top: 5px green solid;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.emphasis{
+   text-decoration-line: underline; 
+}
+.crossed {
+    text-decoration-line: line-through; 
+}
+.yellow{
+    background-color: yellow;
+}
