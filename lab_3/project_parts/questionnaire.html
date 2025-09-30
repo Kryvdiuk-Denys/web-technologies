@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+</head>
+
+<body>
+    <form action="action_page.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
+                <h1>Форма для заповнення</h1>
+            </legend>
+            <fieldset>
+                <legend>
+                    Особисті дані
+                </legend>
+                <label for="name">Ім'я</label>
+                <input tabindex="3" type="text" name="name" id="name" placeholder="Введіть ім'я" pattern="[A-Za-z][^0-9]{6,}">
+                <br><br>
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Введіть пароль">
+                <br><br>
+                <label for="date">День народження</label>
+                <input type="date" name="date" id="date">
+                <br><br>
+                <label for="photo">Завантажте своє Аудіо</label>
+                <input accept="audio/*"  multiple   type="file" name="file" id="file">
+                <br><br>
+                <div>
+                    <p>Розкажіть про себе:</p>
+                    <textarea name="" id=""></textarea>
+                </div><br>
+            </fieldset>
+            <fieldset>
+                <legend>Контакти</legend>
+                <label for="email">Введіть свой Email:</label>
+                <input type="email" name="email" id="email" placeholder="Введіть свій Email" required><br><br>
+                <label for="number">Введіть свій номер:</label>
+                <input type="number" name="number" id="number" placeholder="Введіть свій номер" required>
+            </fieldset>
+            <fieldset>
+                <legend>Загальні дані</legend>
+                <div>
+                    <label for="continent">Континент</label>
+                    <select name="continent" id="continent">
+                        <option value="">Євразія</option>
+                        <option value="">Північна Америка</option>
+                        <option selected value="">Південа Америка</option>
+                        <option value="">Африка</option>
+                        <option value="">Австралія</option>
+                        <option value="">Антарктида </option>
+                    </select>
+                </div>
+                <br><br><br><br>
+                <div>
+                    <label for="language">Знання мов:</label>
+                    <select name="language" id="language" multiple size="3">
+                        <option value="language">Англійська</option>
+                        <option value="language">Українська</option>
+                        <option value="language">Польська</option>
+                        <option value="language">Румунська</option>
+                        <option value="language">Німецька</option>
+                        <option value="language">Австро-Угорська </option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <label for="continent">Громадянство</label>
+                    <select name="continent" id="continent">
+                        <optgroup label="Європа">
+                            <option value="continent">Українське</option>
+                            <option value="continent">Польське</option>
+                            <option value="continent">Англійське</option>
+                        </optgroup>
+                        <optgroup label="Антарктида">
+                            <option value="continent">По дефолту</option>
+                        </optgroup>
+                        <optgroup label="Азія">
+                            <option value="continent">Турецька</option>
+                            <option value="continent">Вірменська</option>
+                            <option value="continent">Китайська</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br><br>
+
+                <input list="counries" placeholder="Введіть країну">
+                <datalist id="counries">
+                    <option value="Україна">Україна</option>
+                    <option value="США">США</option>
+                </datalist>
+        
+                <br><br>
+                Обери національність: <br>
+                <input checked type="radio" id="Ukrainian" name="nation" value="Ukrainian">
+                <label for="Ukrainian">Українець</label><br>
+                <input type="radio" id="Japanese" name="nation" value="Japanese">
+                <label for="Japanese">Японець</label><br>
+                <input type="radio" id="American" name="nation" value="American">
+                <label for="American">Американець</label><br><br>
+
+                Обери стать: <br>
+                <input checked type="radio" id="male" name="sex" value="MALE">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="sex" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="javascript" name="sex" value="JavaScript">
+                <label for="javascript">JavaScript</label><br><br>
+
+                Вибери, що ти маєш: <br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Я маю ровер</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Я маю машину</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Я маю лодку</label><br>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="sky">
+                <label for="vehicle4"> Я маю небо</label><br>
+
+            </fieldset><br><br><br>
+            <input type="submit" value="Надіслати">
+            <input type="reset" value="Очистити">
+        </fieldset>
+    </form>
+    <br><br><br>
+<a href="C:\Users\Admin\OneDrive\Рабочий стол\web-technologies\lab_3\index.html"> <h1>Повернутися назад</h1></a>
+</body>
+
+</html>
