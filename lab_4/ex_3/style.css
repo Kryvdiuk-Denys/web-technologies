@@ -1,26 +1,26 @@
-ul>li>ul{
-    color: purple;
+ul > li > ul {
+  color: purple;
 }
-.main{
-    color:green;
-}
-
-.square{
-    list-style-type: square;
+.main {
+  color: green;
 }
 
-.pict{
-    list-style-image: url("check.png");
+.square {
+  list-style-type: square;
 }
 
-.none{
-    list-style-type: none;
+.pict {
+  list-style-image: url("check.png");
 }
 
-.square li>a{
-    text-decoration: none;
+.none {
+  list-style-type: none;
 }
 
-.different li{
-    list-style-position: inside;  
+.square li > a {
+  text-decoration: none;
+}
+
+.different li {
+  list-style-position: inside;
 }

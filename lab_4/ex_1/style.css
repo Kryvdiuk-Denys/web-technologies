@@ -1,42 +1,42 @@
-*{
-    font-family: Arial;
-    font-size: 20px;
-    line-height: 40px;
+* {
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 40px;
 }
 
-p{
-    color: green;
-    text-align: center;
+p {
+  color: green;
+  text-align: center;
 }
 
-div{
-    text-align: justify;
+div {
+  text-align: justify;
 }
 
-.text-color{
-    color: red;
+.text-color {
+  color: red;
 }
 
-.single-line{
-    white-space: nowrap;
+.single-line {
+  white-space: nowrap;
 }
 
-#cursiveBold{
-    font-weight: bold;
-    font-style: italic;
+#cursiveBold {
+  font-weight: bold;
+  font-style: italic;
 }
 
-.text-shadowed{
-    text-shadow: 5px -5px 3px rgb(255, 0, 0);
+.text-shadowed {
+  text-shadow: 5px -5px 3px rgb(255, 0, 0);
 }
 
-.text-lined-upper{
-    text-decoration: line-through;
-    text-transform: uppercase;
-    text-indent: 50px;
+.text-lined-upper {
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-indent: 50px;
 }
 
-.indented{
-    word-spacing: 50px;
-    letter-spacing: 30px;
+.indented {
+  word-spacing: 50px;
+  letter-spacing: 30px;
 }
