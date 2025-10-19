@@ -1,19 +1,10 @@
-* {
+.recept {
   text-align: center;
-
   box-sizing: border-box;
 }
 
 .title {
   color: red;
-}
-
-.ingredients {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin-bottom: 5px;
-  line-height: 0.8;
 }
 
 .bold {
@@ -33,6 +24,6 @@
 .crossed {
   text-decoration-line: line-through;
 }
-.yellow {
+.marked {
   background-color: yellow;
 }

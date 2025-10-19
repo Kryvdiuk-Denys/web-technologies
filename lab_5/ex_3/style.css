@@ -18,6 +18,34 @@ body {
     #ffffff
   );
 }
+
+select {
+  appearance: none;
+  background-size: 16px;
+  border: 2px solid #6b5cf6;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(107, 92, 246, 0.15);
+}
+
+select:hover {
+  background-color: #f0edff;
+  box-shadow: 0 4px 10px rgba(107, 92, 246, 0.25);
+  transform: translateY(-1px);
+}
+
+select:focus {
+  outline: none;
+  border-color: #4c3ef0;
+  background-color: #e6e3ff;
+  box-shadow: 0 0 0 4px rgba(107, 92, 246, 0.3);
+}
+
+
+
 .container {
   text-align: center;
   background-color: rgba(179, 179, 179, 0.486);

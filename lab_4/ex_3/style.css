@@ -5,15 +5,15 @@ ul > li > ul {
   color: green;
 }
 
-.square {
+.type-square {
   list-style-type: square;
 }
 
-.pict {
+.type-pict {
   list-style-image: url("check.png");
 }
 
-.none {
+.type-none {
   list-style-type: none;
 }
 

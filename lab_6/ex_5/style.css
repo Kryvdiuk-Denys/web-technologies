@@ -1,0 +1,122 @@
+.wrapper {
+  width: 1140px;
+  margin-left: 12%;
+}
+.icon {
+  width: 150px;
+  float: left;
+}
+.btn {
+  background-color: rgb(255, 127, 80);
+  font-size: 20px;
+  color: rgb(7, 7, 159);
+  width: 10rem;
+  height: 3rem;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+.buttons {
+  float: right;
+}
+.btn:hover {
+  box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+.block {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cards {
+  width: 300px;
+  height: 400px;
+  border: 1px solid green;
+  box-sizing: border-box;
+  margin: 20px;
+  float: left;
+}
+
+.card-4 {
+  clear: left;
+}
+
+.photo-people {
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  border-radius: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-name {
+  font-size: 28px;
+  margin: 10px;
+}
+
+.text-content {
+  margin: 10px;
+}
+
+.card-1 {
+  background-image: linear-gradient(
+    to left bottom,
+    #ea9b2b,
+    #eaaae3,
+    #9b48a5,
+    #4353e7,
+    #8aa7ec,
+    #efec34,
+    #a1e88c,
+    #2de508
+  );
+}
+
+.card-2{
+    background-image: linear-gradient(45deg, green 20%, transparent 25%, transparent 25%, transparent 75%, orange 75%, blue 100%),
+    linear-gradient(50deg, yellow 20%, transparent 25%, transparent 25%, transparent 75%, purple 75%, orange 100%);
+    background-size: 100px 100px;
+    background-position: 5px 5px, 50px 50px;
+}
+
+.card-3 {
+  background: repeating-linear-gradient(
+    to left,
+    #ffffff 12%,
+    #417e12 24%,
+    #fbe606 36%,
+    #3205fa 48%
+  );
+}
+
+.card-4{
+ background-image: linear-gradient(to left top, yellow 35%, transparent 10%, transparent 100%),
+    linear-gradient(to right top, green 25%, transparent 10%, transparent 100%),
+    linear-gradient(to right bottom, orange 25%, transparent 50%, transparent 70%),
+    linear-gradient(to left bottom, blue 25%, transparent 60%, transparent 100%);
+}
+
+.card-5{
+background-image:linear-gradient(to right top, rebeccapurple 10%, transparent 30%, transparent 90%),
+    linear-gradient(
+            350deg,
+            hsl(44, 100%, 38%) 0%,
+            hsl(43, 46%, 60%) 5%,
+            hsl(335, 44%, 41%) 16%,
+            hsl(290, 29%, 31%) 24%,
+            hsl(120, 55%, 54%) 32%,
+            hsl(41, 100%, 65%) 39%,
+            hsl(321, 45%, 46%) 47%,
+            hsl(263, 31%, 50%) 56%,
+            hsl(219, 97%, 45%) 64%,
+            hsl(109, 68%, 55%) 73%,
+            hsl(50, 100%, 50%) 82%,
+            hsl(30, 79%, 45%) 91%
+    );
+}

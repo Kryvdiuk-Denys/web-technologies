@@ -1,0 +1,74 @@
+.wrapper{
+    width: 1140px;
+    margin-left: 12%;
+}
+.icon{
+    width: 150px;
+    float: left;
+}
+.btn{
+    background-color: rgb(255, 127, 80);
+    font-size: 20px;
+    color: rgb(7, 7, 159);
+    width: 10rem;
+    height: 3rem;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.buttons{
+    float: right;
+}
+.btn:hover{
+box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
+transition: 0.4s;
+cursor: pointer;
+font-size: 21px;
+}
+
+
+.block {
+  width: 100%;
+  text-align: center; 
+  box-sizing: border-box;
+  padding-top: 40px;
+     clear: both;
+}
+
+.cards {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  border: 1px solid green;
+  margin: 20px;
+  vertical-align: top; 
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.photo-seal {
+  width: 100%;
+  height: auto;
+}
+ .card-name{
+    text-align: left;
+    font-size: 28px;
+ }
+
+ .card-1{
+    box-shadow: -7px -7px 5px 3px green;
+ }
+ .card-2{
+  box-shadow: 0px 0px 11px 12px green;
+ }
+ .card-3{
+  box-shadow: 9px 9px 13px -1px rgba(0, 128, 0, 0.436);
+ }
+ .card-4{
+box-shadow: 0px 0px 35px 1px green;
+ }
+ .card-5{
+box-shadow: -10px 0px 0px 0px red, 10px 0px 0px 0px blue, 10px 10px 0px 0px yellow, -10px 10px 0px 0px yellow, -10px -10px 0px 0px green, 10px -10px 0px 0px green;
+ }
+ .card-6{
+  box-shadow: 0px -16px 0px -8px yellow, 0px 16px 0px -8px green
+ }
