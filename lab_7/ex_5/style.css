@@ -1,0 +1,71 @@
+.forecast {
+  width: 410px;
+  height: 370px;
+  background-color: rgb(163, 163, 163);
+}
+.dark-block {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 260px;
+  height: 250px;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.date {
+  font-size: 90px;
+  color: rgb(163, 163, 163);
+  font-weight: 700;
+  margin-top: 140px;
+  margin-left: 20px;
+}
+.photo-cloud {
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  z-index: 2;
+}
+.week {
+  background-color: rgb(198, 198, 198);
+  box-shadow: 4px 4px 0px 1px #676767;
+  position: absolute;
+  top: 240px;
+  left: 200px;
+  width: 200px;
+  height: 120px;
+}
+.day-week {
+  float: left;
+  margin-right: 20px;
+  margin-top: 60px;
+  font-size: 10px;
+  color: #707070;
+}
+.dagree {
+  float: left;
+  margin-right: 15px;
+  margin-top: -5px;
+}
+.week-degrees,
+.week-name {
+  margin-left: 10px;
+}
+.photo-left-arrow {
+  width: 40px;
+  background-color: #707070c8;
+  box-shadow: 0px 0px 9px 4px rgba(97, 97, 97, 0.97);
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  z-index: 2;
+}
+.photo-right-arrow {
+  width: 40px;
+  background-color: #707070c8;
+  box-shadow: 0px 0px 9px 4px rgba(97, 97, 97, 0.97);
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  z-index: 2;
+}

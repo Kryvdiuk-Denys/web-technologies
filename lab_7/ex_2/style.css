@@ -1,0 +1,65 @@
+.block-1 {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 400px;
+  height: 100px;
+  background-color: rgb(0, 176, 80);
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.block-2 {
+  position: absolute;
+  top: 100px;
+  left: 720px;
+  width: 400px;
+  height: 100px;
+  background-color: rgb(178, 161, 199);
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.block-3 {
+  position: absolute;
+  top: 220px;
+  left: 300px;
+  width: 820px;
+  height: 300px;
+  background-color: rgb(136, 34, 173);
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Показати блок 2, коли наводимо на блок 1 */
+.block-1:hover + .block-2 {
+  opacity: 1;
+}
+
+/* Показати блок 3, коли наводимо на блок 2 */
+.block-2:hover + .block-3 {
+  opacity: 1;
+}
+
+/* Щоб блок 2 не зникав, коли курсор переходить на нього з блоку 1 */
+.block-1:hover + .block-2:hover,
+.block-2:hover {
+  opacity: 1;
+}
+
+/* Так само для блоків 2 → 3 */
+.block-2:hover + .block-3:hover,
+.block-3:hover {
+  opacity: 1;
+}
