@@ -2,31 +2,33 @@
   width: 1140px;
   margin-left: 12%;
 }
-.icon {
+.logo{
   width: 150px;
   float: left;
 }
-.btn {
+.link {
   background-color: rgb(255, 127, 80);
   font-size: 20px;
   color: rgb(7, 7, 159);
   width: 10rem;
   height: 3rem;
   margin-right: 10px;
+
+  padding: 20px;
+}
+.navigation-menu {
+  float: right;
   margin-top: 40px;
 }
-.buttons {
-  float: right;
-}
-.btn:hover {
+.link:hover {
   box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
   transition: 0.4s;
   cursor: pointer;
-  font-size: 21px;
 }
-.container {
-  clear: both;
 
+
+.information {
+  clear: both;
   padding: 10px;
 }
 
@@ -59,24 +61,15 @@
   height: 700px;
   text-align: justify;
 }
-.image_london {
-  width: 100px;
-}
-.image_london1 {
-  float: right; 
-  margin: 10px; 
-  width: 135px; 
-  height: auto; 
-}
 
-.image_london2 {
+.image_position-left {
   float: left; 
   margin: 10px; 
   width: 160px; 
   height: auto; 
 }
 
-.image_london3 {
+.image_position-right {
   float: right;
   margin: 10px;
   width: 160px;

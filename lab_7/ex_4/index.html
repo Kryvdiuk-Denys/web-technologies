@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task-4 - Виправлені меню</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Горизонтальне меню -->
-    <ul class="horizontal-menu">
-      <li class="home">
-        <img src="../img/home.svg" alt="home icon" class="horizontal-icon" />
-        <ul class="submenu">
-          <li class="has-submenu">
-            Промокоди
-            <ul class="subsubmenu">
-              <li>На одяг</li>
-              <li>На техніку</li>
-              <li>На їжу</li>
-              <li>На розваги</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Завдання 4 </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="topbar">
+    <ul class="h-nav clearfix">
+      <li class="h-item">
+        <input id="h1" type="checkbox" class="toggle"/>
+        <a href="#" class="h-link" aria-haspopup="true" aria-controls="h1-sub" title="Головна">
+          <span class="material-icons">home</span>
+        </a>
+        <ul id="h1-sub" class="h-sub">
+          <li class="has-sub">
+            <input id="h1-1" type="checkbox" class="toggle"/>
+            <a href="#" class="h-sub-link" aria-haspopup="true" aria-controls="h1-1-sub">Промокоди</a>
+            <ul id="h1-1-sub" class="h-sub-sub">
+              <li><a href="#">На одяг</a></li>
+              <li><a href="#">На техніку</a></li>
+              <li><a href="#">На їжу</a></li>
+              <li><a href="#">На розваги</a></li>
             </ul>
           </li>
-          <li>Всі магазини</li>
-          <li>Категорії</li>
+          <li><a href="#">Всі магазини</a></li>
+          <li><a href="#">Категорії</a></li>
         </ul>
       </li>
-      <li class="search">
-        <img
-          src="../img/search.svg"
-          alt="search icon"
-          class="horizontal-icon"
-        />
-        <ul class="submenu">
-          <li>Новини</li>
-          <li>Публікації</li>
-          <li>Блоги</li>
+      <li class="h-item">
+        <input id="h2" type="checkbox" class="toggle"/>
+        <a href="#" class="h-link" aria-haspopup="true" aria-controls="h2-sub" title="Пошук">
+          <span class="material-icons">search</span>
+        </a>
+        <ul id="h2-sub" class="h-sub">
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Публікації</a></li>
+          <li><a href="#">Блоги</a></li>
         </ul>
       </li>
-      <li class="mail">
-        <img src="../img/mail.svg" alt="mail icon" class="horizontal-icon" />
-        <ul class="submenu">
-          <li class="has-submenu">
-            Форум
-            <ul class="subsubmenu">
-              <li>Технічний</li>
-              <li>Ігровий</li>
-              <li>Спільнота</li>
+      <li class="h-item right">
+        <input id="h3" type="checkbox" class="toggle"/>
+        <a href="#" class="h-link active" aria-haspopup="true" aria-controls="h3-sub" title="Пошта">
+          <span class="material-icons">mail</span>
+        </a>
+        <ul id="h3-sub" class="h-sub right-menu">
+          <li class="has-sub">
+            <input id="h3-1" type="checkbox" class="toggle"/>
+            <a href="#" class="h-sub-link" aria-haspopup="true" aria-controls="h3-1-sub">Форум</a>
+            <ul id="h3-1-sub" class="h-sub-sub right-sub">
+              <li><a href="#">Технічний</a></li>
+              <li><a href="#">Ігровий</a></li>
+              <li><a href="#">Спільнота</a></li>
             </ul>
           </li>
-          <li>Допомога</li>
+          <li><a href="#">Допомога</a></li>
         </ul>
       </li>
     </ul>
+  </nav>
 
-    <ul class="vertical-menu">
-      <li>
-        <div class="menu-item">
-          <img src="../img/home.svg" alt="home icon" class="icon" />
-          <span>Home</span>
-        </div>
-        <ul class="submenu">
-          <li>
-            Dashboard
-            <ul class="subsubmenu">
-              <li>Stats</li>
-              <li>Reports</li>
+  <aside class="sidebar">
+    <ul class="v-nav">
+      <li class="v-item">
+        <input id="v1" type="checkbox" class="toggle"/>
+        <a href="#" class="v-link" aria-haspopup="true" aria-controls="v1-sub">
+          <span class="material-icons">home</span>
+          <span class="title">Home</span>
+        </a>
+        <ul id="v1-sub" class="v-sub">
+          <li class="has-sub">
+            <input id="v1-1" type="checkbox" class="toggle"/>
+            <a href="#" class="v-sub-link" aria-haspopup="true" aria-controls="v1-1-sub">Dashboard</a>
+            <ul id="v1-1-sub" class="v-sub-sub">
+              <li><a href="#">Stats</a></li>
+              <li><a href="#">Reports</a></li>
             </ul>
           </li>
-          <li>Updates</li>
-          <li>Settings</li>
+          <li><a href="#">Updates</a></li>
+          <li><a href="#">Settings</a></li>
         </ul>
       </li>
-
-      <li>
-        <div class="menu-item">
-          <img src="../img/list.svg" alt="list icon" class="icon" />
-          <span>About</span>
-        </div>
-        <ul class="submenu">
-          <li>Company</li>
-          <li>
-            Team
-            <ul class="subsubmenu">
-              <li>Management</li>
-              <li>Developers</li>
+      <li class="v-item">
+        <input id="v2" type="checkbox" class="toggle"/>
+        <a href="#" class="v-link" aria-haspopup="true" aria-controls="v2-sub">
+          <span class="material-icons">list</span>
+          <span class="title">About</span>
+        </a>
+        <ul id="v2-sub" class="v-sub">
+          <li><a href="#">Company</a></li>
+          <li class="has-sub">
+            <input id="v2-1" type="checkbox" class="toggle"/>
+            <a href="#" class="v-sub-link" aria-haspopup="true" aria-controls="v2-1-sub">Team</a>
+            <ul id="v2-1-sub" class="v-sub-sub">
+              <li><a href="#">Management</a></li>
+              <li><a href="#">Developers</a></li>
             </ul>
           </li>
-          <li>Contacts</li>
+          <li><a href="#">Contacts</a></li>
         </ul>
       </li>
-
-      <li>
-        <div class="menu-item">
-          <img src="../img/cafe.svg" alt="work icon" class="icon" />
-          <span>Work With Me</span>
-        </div>
-        <ul class="submenu">
-          <li>Projects</li>
-          <li>Clients</li>
-          <li>Hire Me</li>
+      <li class="v-item">
+        <input id="v3" type="checkbox" class="toggle"/>
+        <a href="#" class="v-link active" aria-haspopup="true" aria-controls="v3-sub">
+          <span class="material-icons">coffee</span>
+          <span class="title">Work With Me</span>
+        </a>
+        <ul id="v3-sub" class="v-sub">
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Hire Me</a></li>
         </ul>
       </li>
     </ul>
-  </body>
+  </aside>
+</body>
 </html>

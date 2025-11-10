@@ -1,29 +1,34 @@
-.wrapper{
-    width: 1140px;
-    margin-left: 12%;
+.wrapper {
+  width: 1140px;
+  margin-left: 12%;
 }
-.icon{
-    width: 150px;
-    float: left;
+.logo{
+  width: 150px;
+  float: left;
 }
-.btn{
-    background-color: rgb(255, 127, 80);
-    font-size: 20px;
-    color: rgb(7, 7, 159);
-    width: 10rem;
-    height: 3rem;
-    margin-right: 10px;
-    margin-top: 40px;
+.link {
+  background-color: rgb(255, 127, 80);
+  font-size: 20px;
+  color: rgb(7, 7, 159);
+  width: 10rem;
+  height: 3rem;
+  margin-right: 10px;
+
+  padding: 20px;
 }
-.buttons{
-    float: right;
+.navigation-menu {
+  float: right;
+  margin-top: 40px;
 }
-.btn:hover{
-box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
-transition: 0.4s;
-cursor: pointer;
-font-size: 21px;
+.link:hover {
+  box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
+  transition: 0.4s;
+  cursor: pointer;
+
 }
+
+
+
 
 
 .block {

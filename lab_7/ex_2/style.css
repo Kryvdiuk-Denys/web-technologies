@@ -42,23 +42,19 @@
   transition: opacity 0.3s ease;
 }
 
-/* Показати блок 2, коли наводимо на блок 1 */
 .block-1:hover + .block-2 {
   opacity: 1;
 }
 
-/* Показати блок 3, коли наводимо на блок 2 */
 .block-2:hover + .block-3 {
   opacity: 1;
 }
 
-/* Щоб блок 2 не зникав, коли курсор переходить на нього з блоку 1 */
 .block-1:hover + .block-2:hover,
 .block-2:hover {
   opacity: 1;
 }
 
-/* Так само для блоків 2 → 3 */
 .block-2:hover + .block-3:hover,
 .block-3:hover {
   opacity: 1;
