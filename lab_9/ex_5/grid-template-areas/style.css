@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Roboto", Arial, sans-serif;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.body {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 6fr 1fr 1fr 1fr ;
+  grid-template-areas:
+    "head"
+    "navigation"
+    "main"
+    "sidebar"
+    "ads"
+    "footer";
+  height: 100vh;
+}
+
+.head { background-color: rgb(190, 0, 0); grid-area: head; }
+.navigation { background-color: rgb(191, 89, 0); grid-area: navigation; }
+.main { background-color: rgb(0, 122, 87); grid-area: main; }
+.sidebar { background-color: rgb(0, 80, 160); grid-area: sidebar; }
+.ads { background-color: rgb(90, 0, 174); grid-area: ads; }
+.footer { background-color: rgb(200, 0, 194); grid-area: footer; }
+
+@media (min-width: 576px) {
+  .body {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 3fr 3fr 1fr ;
+    grid-template-areas:
+      "head head"
+      "navigation navigation"
+      "sidebar main"
+      "sidebar main"
+      "ads footer";
+  }
+}
+
+@media (min-width: 768px) {
+  .body {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 3fr 1fr ;
+    grid-template-areas:
+      "head head head"
+      "sidebar navigation ads"
+      "sidebar main ads"
+      "sidebar main ads"
+      "footer footer footer";
+  }
+}

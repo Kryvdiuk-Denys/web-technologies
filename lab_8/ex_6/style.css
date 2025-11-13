@@ -321,7 +321,7 @@ a {
 }
 
 .card-block-images-five {
-  background-image: url(../img/fon.jpeg);
+  background-image: url(fon.jpeg);
   background-size: cover;
   background-position: center;
   cursor: pointer;

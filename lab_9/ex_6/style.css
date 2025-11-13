@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Roboto", Arial, sans-serif;
+  width: 94%;
+  margin: 0 auto;
+  counter-reset: block-counter;
+}
+
+.body > div::before {
+  counter-increment: block-counter;  
+  content: counter(block-counter);   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+body > div {
+  background-color: rgb(239, 164, 71);
+  border: 2px solid #fff;
+  min-height: 60px;
+}
+
+.body {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "block-1 block-1 block-1 block-1 block-1 block-1 block-1 block-1 block-1 block-1 block-1 block-1"
+    "block-2 block-2 block-2 block-2 block-2 block-2 block-3 block-3 block-3 block-3 block-3 block-3"
+    "block-4 block-4 block-4 block-4 block-5 block-5 block-5 block-5 block-6 block-6 block-6 block-6"
+    "block-7 block-7 block-7 block-8 block-8 block-8 block-9 block-9 block-9 block-10 block-10 block-10"
+    "block-11 block-11 block-12 block-12 block-13 block-13 block-14 block-14 block-15 block-15 block-16 block-16"
+    "block-17 block-18 block-19 block-20 block-21 block-22 block-23 block-24 block-25 block-26 block-27 block-28";
+  height: 100vh;
+}
+
+
+.block-1 { grid-area: block-1; }
+.block-2 { grid-area: block-2; }
+.block-3 { grid-area: block-3; }
+.block-4 { grid-area: block-4; }
+.block-5 { grid-area: block-5; }
+.block-6 { grid-area: block-6; }
+.block-7 { grid-area: block-7; }
+.block-8 { grid-area: block-8; }
+.block-9 { grid-area: block-9; }
+.block-10 { grid-area: block-10; }
+.block-11 { grid-area: block-11; }
+.block-12 { grid-area: block-12; }
+.block-13 { grid-area: block-13; }
+.block-14 { grid-area: block-14; }
+.block-15 { grid-area: block-15; }
+.block-16 { grid-area: block-16; }
+.block-17 { grid-area: block-17; }
+.block-18 { grid-area: block-18; }
+.block-19 { grid-area: block-19; }
+.block-20 { grid-area: block-20; }
+.block-21 { grid-area: block-21; }
+.block-22 { grid-area: block-22; }
+.block-23 { grid-area: block-23; }
+.block-24 { grid-area: block-24; }
+.block-25 { grid-area: block-25; }
+.block-26 { grid-area: block-26; }
+.block-27 { grid-area: block-27; }
+.block-28 { grid-area: block-28; }
