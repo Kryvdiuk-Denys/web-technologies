@@ -1,0 +1,30 @@
+@use "variables" as v;
+
+@mixin flex($align: center, $justify: center, $dir: row) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin size($w, $h: auto) {
+  width: $w;
+  height: $h;
+}
+
+@mixin focus-ring($color: v.$accent) {
+  &:focus-visible {
+    outline: 3px solid $color;
+    border-radius: 4px;
+  }
+}
+
+@mixin transition($props, $time: v.$transition-normal, $timing: ease) {
+  transition: $props $time $timing;
+}
+
+@mixin responsive($breakpoint: 768px) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

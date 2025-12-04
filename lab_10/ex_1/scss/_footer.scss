@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins";
+
+footer {
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+  color: $light;
+  padding: 40px 0 30px;
+}
+
+.kopypast {
+  color: $muted;
+  margin-bottom: 25px;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.media-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  @include flex(center, center);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+  }
+}
+
+.media-whatsapp   { background-color: rgb(233, 167, 43); }
+.media-facebook   { background-color: rgb(33, 60, 148); }
+.media-twitter    { background-color: rgb(56, 193, 235); }
+.media-twitch     { background-color: rgb(247, 124, 222); }
+.media-pinterest  { background-color: rgb(172, 41, 41); }
+
+.media-img {
+  filter: invert(1);
+  width: 24px;
+}

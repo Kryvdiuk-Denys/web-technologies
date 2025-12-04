@@ -1,0 +1,88 @@
+@import "variables";
+@import "mixins";
+
+.block {
+  background-color: $bg;
+  padding: 70px 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.block-inside,
+.card-block,
+.block-our-work,
+.block-contact,
+.block-news-container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.block-inside > p {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.block > h1 {
+  font-weight: 400;
+}
+
+.block > p {
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.block-contact {
+  text-align: center;
+  margin: 50px auto;
+
+  > h1 {
+    margin-bottom: 15px;
+  }
+}
+
+.block-our-work-header {
+  margin-bottom: 15px;
+
+  h1 {
+    margin: 0 0 5px 0;
+    display: block;
+  }
+
+  .card-block-info-min {
+    font-size: 30px;
+    display: block; 
+  }
+}
+
+@include responsive() {
+  .block {
+    text-align: center;
+  }
+
+  .block h1 {
+    font-size: clamp(20px, 5vw, 32px);
+  }
+
+  .block p {
+    font-size: clamp(14px, 3vw, 18px);
+  }
+
+  .block-our-work-header {
+    text-align: center;
+  }
+}
+
+.block-news {
+  margin-bottom: 100px;
+}
+
+.block-our-work {
+  margin-top: 80px;
+}
+
+.block-our-work > p {
+  margin-bottom: 50px;
+}

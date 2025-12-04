@@ -1,0 +1,11 @@
+@function px-mult($value, $factor) {
+  @return $value * $factor;
+}
+
+@function darken-percent($color, $percent) {
+  @if type-of($percent) == 'number' {
+    @return darken($color, $percent);
+  } @else {
+    @return $color;
+  }
+}

@@ -1,0 +1,100 @@
+extends layout.pug
+
+block vars
+  -
+    var pageTitle = 'Keepsake — Home';
+
+    var menuItems = [
+      { href: '#work',     title: 'WORK',     isActive: true  },
+      { href: '#services', title: 'SERVICES', isActive: false },
+      { href: '#journal',  title: 'JOURNAL',  isActive: false },
+      { href: '#contact',  title: 'CONTACT',  isActive: false }
+    ];
+
+    var works = [
+      '../img/card-img-1.jpg',
+      '../img/card-img-2.jpg',
+      '../img/card-img-3.jpg',
+      '../img/card-img-4.jpg',
+      '../img/card-img-6.jpg',
+      '../img/card-img-7.jpg',
+      '../img/card-img-8.jpg',
+      '../img/card-img-9.jpg'
+    ];
+
+    var featured = {
+      img: '../img/girl.jpg',
+      name: 'Amanda Seyfried',
+      handle: '@contactaddress',
+      link: 'https://kryvdiuk-denys.github.io/keepsake/'
+    };
+
+    var services = [
+      { img: '../img/web-design.png', title: 'WEB DESIGN',      text: 'Donec elit non mi porta gravida eureget metus. Aenean eu leo quam. Pellentesque ornare sem por quam venenatis vestibulum.'   },
+      { img: '../img/tv.png',         title: 'MOTION VIDEO',    text: 'Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur.'   },
+      { img: '../img/printer.png',    title: 'PRINT DESIGN',    text: 'Maecenas sed diam eget risus varius blandit amet non magna. Nullam id dolor id nibh ultricies vehiculaelit praesent commodo.' },
+      { img: '../img/heart.png',      title: 'ILLUSTRATION',    text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus'  }
+    ];
+
+    var news = [
+      { date: 'OCT 13, 2014', tag: 'IDENTITY', img: '../img/card-img-10.jpg', title: 'SOLLICITUDIN TORTOR INCEPTOS', excerpt: 'Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh.' },
+      { date: 'OCT 23, 2014', tag: 'BRANDING', img: '../img/card-img-11.jpg', title: 'CURSUS MALESUADA JUSTO', excerpt: 'Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh.' },
+      { date: 'SEP 19, 2014', tag: 'IDENTITY', img: '../img/card-img-12.jpg', title: 'AMET INCEPTOS FRINGILLA FUSCE', excerpt: 'Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh.' },
+      { date: 'SEP 27, 2014', tag: 'BRANDING', img: '../img/card-img-13.jpg', title: 'ORNARE CURSUS BIBENDUM PURUS', excerpt: 'Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh.' }
+    ];
+
+
+block content
+  .block#work
+    .block-inside
+      p WE'RE KEEPSAKE, A DIGITAL &amp; BRANDING AGENCY
+      span
+        | Specializing in web design, poster, motion video, based in London.
+        | We love to turn ideas into beautiful things.
+
+  .card-block#services
+    .card-block-info
+      p OUR AWESOME WORKS --
+      button.card-block-info-button FILTER PORTFOLIO
+
+    .card-block-images
+      each imgPath, idx in works
+        if idx === 4 && featured
+          a.card-block-images-five(href=featured.link)
+            img.circle(src=featured.img alt=featured.name)
+            span.plus +
+            p.name #{featured.name}
+            p.addres #{featured.handle}
+
+        img(src=imgPath alt='Work image')
+
+  .block-contact#contact
+    h1 WOULD YOU LOVE TO WORK WITH US?
+    button.card-block-info-button
+      img(src='../img/mail.png' alt='Mail icon')
+      | CONTACT US
+
+  .block-our-work
+    .block-our-work-header
+      h1 WHAT DO WE DO --
+
+    p
+      | Maecenas sed diam eget risus varius blandit sit amet non magna.
+      | Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+    .block-our-work-items
+      each svc in services
+        +serviceItem(svc.img, svc.title, svc.text)
+
+  .block-news#journal
+    .block-our-work
+      .block-our-work-header
+        h1 FROM THE JOURNAL --
+
+      p
+        | Short description for the journal section.
+        | More text in the second line.
+
+      .block-news-container
+        each item in news
+          +newsItem(item.img, item.date, item.tag, item.title, item.excerpt)

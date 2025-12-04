@@ -1,0 +1,40 @@
+{
+  "name": "lab_10_ex_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss public/css/style.css",
+    "sass:watch": "sass --watch scss/style.scss:public/css/style.css",
+    "sass:build": "sass scss/style.scss public/css/style.css --style=compressed",
+
+    "pug": "pug index.pug --pretty --out public",
+    "pug:watch": "pug index.pug --pretty --out public --watch",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {
+    "braces": "^3.0.3",
+    "chokidar": "^4.0.3",
+    "detect-libc": "^1.0.3",
+    "fill-range": "^7.1.1",
+    "immutable": "^5.1.4",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "micromatch": "^4.0.8",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^2.3.1",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1",
+    "to-regex-range": "^5.0.1"
+  }
+}

@@ -1,0 +1,8 @@
+nav#nav.menu
+  ul
+    each item in menuItems
+      li.menu-btn
+        a(href=item.href)= item.title
+
+    li
+      button.menu-like(type='button') &hearts;

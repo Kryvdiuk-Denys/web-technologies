@@ -1,0 +1,19 @@
+mixin serviceItem(img, title, text)
+  .item
+    .block-our-work-items-image
+      img(src=img alt=title)
+    h1.block-our-work-items-title= title
+    p.block-our-work-items-text= text
+
+mixin newsItem(img, date, tag, title, excerpt)
+  .block-news-container-min
+    img.image(src=img alt='')
+    .block-news-container-min-info
+      h3 #{date} / #{tag}
+      h2= title
+      p= excerpt
+
+mixin social(href, imgSrc, alt)
+  a(href=href)
+    .media-photo(class='media-' + alt)
+      img.media-img(src=imgSrc alt=alt)
